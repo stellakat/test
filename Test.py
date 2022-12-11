@@ -1,18 +1,8 @@
-#### Import Packages
 import streamlit as st
-import numpy as np
-import pandas as pd
 from PIL import Image
-
-
-#### Import Data
-s = pd.read_csv("C:/Users/sumit/Downloads/social_media_usage.csv")
 
 #### App Visuals
 st.title("Are you a LinkedIn User?")
-
-image = Image.open("C:/Users/sumit/Desktop/FINAL/DahlgrenSpringFlowers.jpg")
-st.image(image, caption='Old North in the spring')
 
 income = st.slider("Income (low=1 to high=9)", 1, 9)
 education = st.slider("Level of Education (less than high school=1 to advanced degrees=8)", 1, 8)
