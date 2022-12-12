@@ -3,6 +3,8 @@ from PIL import Image
 
 #### App Visuals
 st.title("Are you a LinkedIn User?")
+image = Image.open("DahlgrenSpringFlowers.jpg")
+st.image(image, caption='Old North in the spring')
 
 income = st.slider("Income (low=1 to high=9)", 1, 9)
 education = st.slider("Level of Education (less than high school=1 to advanced degrees=8)", 1, 8)
